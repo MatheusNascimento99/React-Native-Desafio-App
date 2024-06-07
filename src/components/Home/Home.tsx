@@ -9,10 +9,12 @@ export function Home() {
   const [tel, setTel] = useState('');
   const [local, setLocal] = useState('');
   const [obs, setObs] = useState('');
+  let allInfo:Array<string> = [];
   
 
 function sendData(){
-  console.log('Função para enviar os dados:',nome, tel, local, obs)
+  allInfo.push(nome, tel, local, obs);
+  console.log('Função para enviar os dados:', allInfo)
 }
 
 
